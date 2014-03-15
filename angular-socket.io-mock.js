@@ -2,6 +2,7 @@
 var ng = angular.module("btford.socket-io",[])
 ng.provider("socketFactory",function(){
   this.$get = function($rootScope){
+    // socket factory implementation
     return function socketFactory() {
       var obj = {}
       obj.events = {}
